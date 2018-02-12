@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cssua.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    
+</head>
+<body>
+    <div data-role="page" id="list-page">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>suger&solt</h1>
+            <!--button href="#" data-icon="gear" class="ui-btn">ê›íË</button!-->
+            <a href="#" data-icon="gear" class="ui-btn-left" id="set">ê›íË</a>
+            <a href="#add-page" data-icon="add" class="ui-btn-right">í«â¡</a>
+        </div>
+        <div data-role="content">
+            <form id="itemlist">
+                <!--ul data-role="listview" data-inset="true" id="data-list"--><!--/ul-->
+            </form>
+        </div>
+        <div data-role="navbar" data-iconpos="left" id="navbar">
+            <ul>
+                <li><a href="#" data-icon="arrow-u"  id="up">è„Ç÷</a></li>
+                <li><a href="#" data-icon="arrow-d" id = "down">â∫Ç÷</a></li>
+                <li><a href="#" data-icon="edit" id = "edit">ï“èW</a></li>
+                <li><a href="#" data-icon="delete" id = "delete">çÌèú</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="add-page">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>çÄñ⁄í«â¡</h1>
+            <a href="#list-page" data-icon="back" class="ui-btn-left">back</a>
+        </div>
+        <div data-role="content">
+            <input id="todo-title" type="text">
+            <input id="add-button" type="button" value="í«â¡" onclick="addTodoSlider()">
+        </div>
+    </div>
+</body>
+</html>
